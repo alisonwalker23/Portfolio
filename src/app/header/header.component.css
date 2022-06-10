@@ -1,0 +1,25 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.mat-toolbar {
+    animation: animateBg 10s ease infinite;
+    background: linear-gradient(90deg, rgba(212, 3, 3, 1) 0%, rgba(237, 92, 1, 1) 5%, rgba(255, 141, 0, 1) 12%, rgba(255, 196, 0, 1) 18%, rgba(255, 252, 0, 1) 23%, rgba(206, 255, 0, 1) 29%,
+            rgba(134, 255, 0, 1) 35%, rgba(56, 255, 0, 1) 39%, rgba(0, 255, 106, 1) 44%, rgba(0, 255, 179, 1) 50%, rgba(0, 255, 248, 1) 56%, rgba(0, 211, 255, 1) 61%, rgba(0, 151, 255, 1) 65%, rgba(0, 86, 255, 1) 70%, rgba(0, 22, 255, 1) 74%, rgba(76, 0, 255, 1) 77%,
+            rgba(124, 0, 255, 1) 81%, rgba(171, 0, 255, 1) 84%, rgba(231, 0, 255, 1) 87%, rgba(255, 0, 211, 1) 90%, rgba(255, 0, 134, 1) 94%, rgba(255, 0, 86, 1) 97%, rgba(255, 0, 0, 1) 100%);
+    background-size: 600% 600%;
+}
+
+@keyframes animateBg {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}

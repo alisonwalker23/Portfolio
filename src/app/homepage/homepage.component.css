@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
+.welcome{
+    display: flex;
+    justify-content: center;
+    font-size: 10vh;
+    font-family: "Luckiest Guy", cursive;
+    animation:bounce-in 1s ease infinite;
+}
+    
+@keyframes bounce-in {
+    0%{ opacity: 0; transform: scale(.3); }
+    30%{ opacity: 1; transform: scale(1.0); }
+    50%{ transform: scale(0.9); }
+    75%{ opacity: 1; transform: scale(1.0); }
+    85%{ transform: scale(0.95); }
+    100%{ transform: scale(1); }
+}
+
+
+h3 {
+    font-family: "Luckiest Guy", cursive;
+    margin-top: 100px;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    animation: cool-shadow-dance 0.5s infinite;
+}
+
+@keyframes cool-shadow-dance {
+    0% {text-shadow: -4px -4px 0px red, -6px -6px 0px rgb(255, 98, 0), -8px -8px 0px rgb(255, 238, 0),
+        -10px -10px 0px rgb(34, 255, 0), -12px -12px 0px rgb(25, 0, 255), -14px -14px 0px rgb(200, 0, 255);}
+    20% {text-shadow:-4px -4px 0px rgb(255, 98, 0),-6px -6px 0px rgb(255, 238, 0),
+        -8px -8px 0px rgb(34, 255, 0), -10px -10px 0px rgb(25, 0, 255), -12px -12px 0px rgb(200, 0, 255), -14px -14px 0px red;}
+    40% {text-shadow: -4px -4px 0px rgb(255, 238, 0),
+        -6px -6px 0px rgb(34, 255, 0), -8px -8px 0px rgb(25, 0, 255), -10px -10px 0px rgb(200, 0, 255), -12px -12px 0px red, -14px -14px 0px rgb(255, 98, 0);}
+    60% {text-shadow:
+        -4px -4px 0px rgb(34, 255, 0), -6px -6px 0px rgb(25, 0, 255), -8px -8px 0px rgb(200, 0, 255), -10px -10px 0px red, -12px -12px 0px rgb(255, 98, 0), -14px -14px 0px rgb(255, 238, 0);}
+    80% {text-shadow:
+        -4px -4px 0px rgb(25, 0, 255), -6px -6px 0px rgb(200, 0, 255), -8px -8px 0px red, -10px -10px 0px rgb(255, 98, 0), -12px -12px 0px rgb(255, 238, 0), -14px -14px 0px rgb(34, 255, 0);}
+    100% {text-shadow:
+        -4px -4px 0px rgb(200, 0, 255), -6px -6px 0px red, -8px -8px 0px rgb(255, 98, 0), -10px -10px 0px rgb(255, 238, 0), -12px -12px 0px rgb(34, 255, 0), -14px -14px 0px rgb(25, 0, 255);}
+}
+
+
+::selection {
+  background: transparent;
+}
+
+/* JUMP */
+h1 {
+  font-family: "Luckiest Guy", cursive;
+  cursor: default;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+h1 span {
+  position: relative;
+  top: 20px;
+  display: inline-block;
+  animation: bounce 0.3s ease infinite alternate;
+  font-size: 80px;
+  color: #fff;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+    0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
+    0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+h1 span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+h1 span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+h1 span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+h1 span:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+h1 span:nth-child(6) {
+  animation-delay: 0.5s;
+}
+
+h1 span:nth-child(7) {
+  animation-delay: 0.6s;
+}
+
+h1 span:nth-child(8) {
+  -webkit-animation-delay: 0.2s;
+}
+
+h1 span:nth-child(9) {
+  -webkit-animation-delay: 0.3s;
+}
+
+h1 span:nth-child(10) {
+  animation-delay: 0.4s;
+}
+
+h1 span:nth-child(11) {
+  animation-delay: 0.5s;
+}
+
+h1 span:nth-child(12) {
+  animation-delay: 0.6s;
+}
+
+h1 span:nth-child(13) {
+  animation-delay: 0.7s;
+}
+
+h1 span:nth-child(14) {
+  animation-delay: 0.8s;
+}
+
+/* ANIMATION */
+@keyframes bounce {
+  100% {
+    top: -20px;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+      0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc,
+      0 50px 25px rgba(0, 0, 0, 0.2);
+  }
+}
+
+
+  .container {
+    display: flex;
+  /*   border:1px solid red; */
+    height: 100%;
+    align-items: center;
+  }
+  
+  svg {
+      display: block;
+      font: 9.6em 'Montserrat';
+      width: 1000px;
+      height: 300px;
+      margin: 0 auto;
+  }
+  
+  .text-copy {
+    font-family: "Luckiest Guy", cursive;
+      fill: none;
+      stroke: white;
+      stroke-dasharray: 6% 29%;
+      stroke-width: 5px;
+      stroke-dashoffset: 0%;
+      animation: stroke-offset 5.5s infinite linear;
+  }
+  
+  .text-copy:nth-child(1){
+    stroke: #ff01b7;
+    animation-delay: -1;
+  }
+  
+  .text-copy:nth-child(2){
+    stroke: #ff006a;
+    animation-delay: -2s;
+  }
+  
+  .text-copy:nth-child(3){
+    stroke: #ff8fd2;
+    animation-delay: -3s;
+  }
+  
+  .text-copy:nth-child(4){
+    stroke: #ff5577;
+    animation-delay: -4s;
+  }
+  
+  .text-copy:nth-child(5){
+    stroke: #ffea4c;
+    animation-delay: -5s;
+  }
+  
+  @keyframes stroke-offset{
+    100% {stroke-dashoffset: -35%;}
+  }
+
+
+
+
+  
